@@ -1,14 +1,14 @@
 # Exosome 101
-![[Pasted image 20210622144758.png]]
+![](https://i.imgur.com/Cs5j4bR.png)
 
 ### Exosome size
 Exosomes are small endosome derived lipid nanoparticles (30-120 nm in diameter), actively secreted by exocytosis in most living cells.
 
 ### Exosome purification (BioVision)
-- Chemical precipitation [[ExoPureTM Reagent]]
-- Size exclusion chromatography based [[ExoPureTM SEC Columns]]
-- Immunocapture based [[ExoPureTM Immunobeads]]
-- Filtration based [[ExoPureTM Isolation Kit]] exosome isolation tools
+- Chemical precipitation
+- Size exclusion chromatography based
+- Immunocapture based
+- Filtration based exosome isolation tools
 
 ### Purification result examination
 You can do a western blot analysis on the isolated, purified exosomes using antibodies to exosomal markers. Just resuspend the purified exosomes in protein sample buffer (without any DTT or β-mercaptoethanol) and then blot for antibodies to exosomal markers such as: 
