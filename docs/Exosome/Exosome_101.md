@@ -8,10 +8,10 @@ Exosomes are small endosome derived lipid nanoparticles (30-120 nm in diameter),
 
 ## Exosome purification (BioVision)
 
-- Chemical precipitation
-- Size exclusion chromatography based
-- Immunocapture based
-- Filtration based exosome isolation tools
+- [Chemical precipitation](/Exosome/ExoPureTM_Reagent/)
+- [Size exclusion chromatography based](/Exosome/ExoPureTM_SEC_Columns/)
+- [Immunocapture based](/Exosome/ExoPureTM_Immunobeads/)
+- [Filtration based exosome isolation tools](/Exosome/ExoPureTM_Isolation_Kit/)
 
 ## Purification result examination
 

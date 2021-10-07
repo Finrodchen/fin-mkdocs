@@ -4,15 +4,22 @@ site_url: https://fin-mkdocs.pages.dev/
 
 nav:
     - 首頁: index.md
-    - Markdown: Markdown Cheatsheet.md
-    - 'DOMA':
-      - '特管法簡介': /DOMA/細胞治療的關鍵角色.md
-      - '資訊揭露平台': /DOMA/細胞治療技術資訊揭露平台.md
-
+    - '新興技術':
+        - 'Exosome':
+            - 'Exosome 101': './Exosome/Exosome_101.md'
+    - '特管辦法':
+        - '特管辦法簡介': './DOMA/main_character.md'
+        - '資訊揭露平台': './DOMA/info_platform.md'
+    - '職能框架':
+        - '職能框架簡介': './職能框架/職能框架101.md'
+    - '業界動態':
+        - 'CDMO':
+            - 'CDMO統整': './CDMO/CDMO統整.md'
+            - '樂迦再生科技': './CDMO/樂迦再生科技.md'
+    - Markdown: Markdown_Cheatsheet.md
 
 repo_url: https://github.com/Finrodchen/fin-mkdocs
 
 repo_name: GitHub
-
 
 dev_addr: 127.0.0.1:8100
