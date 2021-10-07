@@ -6,8 +6,8 @@ nav:
     - 首頁: index.md
     - Markdown: Markdown Cheatsheet.md
     - 'DOMA':
-      - '特管法簡介': 細胞治療的關鍵角色.md
-      - '資訊揭露平台': 細胞治療技術資訊揭露平台.md
+      - '特管法簡介': /DOMA/細胞治療的關鍵角色.md
+      - '資訊揭露平台': /DOMA/細胞治療技術資訊揭露平台.md
 
 
 repo_url: https://github.com/Finrodchen/fin-mkdocs
