@@ -1,17 +1,22 @@
 # Exosome 101
-![](https://i.imgur.com/Cs5j4bR.png)
 
-### Exosome size
+![main](https://i.imgur.com/Cs5j4bR.png)
+
+## Exosome size
+
 Exosomes are small endosome derived lipid nanoparticles (30-120 nm in diameter), actively secreted by exocytosis in most living cells.
 
-### Exosome purification (BioVision)
+## Exosome purification (BioVision)
+
 - Chemical precipitation
 - Size exclusion chromatography based
 - Immunocapture based
 - Filtration based exosome isolation tools
 
-### Purification result examination
-You can do a western blot analysis on the isolated, purified exosomes using antibodies to exosomal markers. Just resuspend the purified exosomes in protein sample buffer (without any DTT or β-mercaptoethanol) and then blot for antibodies to exosomal markers such as: 
+## Purification result examination
+
+You can do a western blot analysis on the isolated, purified exosomes using antibodies to exosomal markers. Just resuspend the purified exosomes in protein sample buffer (without any DTT or β-mercaptoethanol) and then blot for antibodies to exosomal markers such as:
+
 - Alix1 protein
 - CD9
 - CD81
@@ -19,30 +24,36 @@ You can do a western blot analysis on the isolated, purified exosomes using anti
 
 Additionally, you can do nano tracking analysis (NTA) on the isolated exosomes.
 
-### Exosome of adipocyte
-It has been shown that almost all adipocyte-derived exosomes express fatty acid binding protein ==(FABP4)==.
+## Exosome of adipocyte
 
-### Exosome storage
-Ideally, exosomes should be processed ==fresh==. Fresh samples are always preferred over frozen samples.
+It has been shown that almost all adipocyte-derived exosomes express fatty acid binding protein `(FABP4)`.
 
-However, ==-80°C frozen samples== can also be used, provided, they were frozen right after isolation, were not freeze thawed multiple times(for which we recommend aliquoting the samples before freezing) and have been frozen for relatively short periods.
+## Exosome storage
 
-### DMSO-using issue
+Ideally, exosomes should be processed `fresh`. Fresh samples are always preferred over frozen samples.
+
+However, `-80°C frozen samples` can also be used, provided, they were frozen right after isolation, were not freeze thawed multiple times(for which we recommend aliquoting the samples before freezing) and have been frozen for relatively short periods.
+
+## DMSO-using issue
+
 DMSO is a cryoprotectant used to preserve the cell membrane from any damage that may be caused by freezing like crystal formation for instance. However, the size of the exosomes and liquid content in it is very small as compared to the cells.
 
 Thus, **_we do not recommend adding DMSO while freezing your serum samples at -80°C._**
 
-### Exosome standards
+## Exosome standards
+
 Plasma exosome standards are purified lyophilized exosomes isolated from a pool of healthy certified donors by differential ultracentrifugation and microfiltration.
 
-### Exosome negitave controls
+## Exosome negitave controls
+
 The below mentioned proteins should be absent from the Exosome preparation :
+
 - Endoplasmic reticulum
 - Grp94HSP90B1
-- calnexin ==(CANX)==
-- Golgi ==(GM130)==
-- Mitochondria ==(cytochrome CCYC1)==
-- Nucleus ==(histonesHIST*H*)==
-- Argonaute/RISC complex ==(AGO*)==
+- calnexin `(CANX)`
+- Golgi `(GM130)`
+- Mitochondria `(cytochrome CCYC1)`
+- Nucleus `(histonesHIST*H*)`
+- Argonaute/RISC complex `(AGO*)`
 
 [Datasource](http://www.journalofextracellµlarvesicles.net/index.php/jev/article/view/26913)
