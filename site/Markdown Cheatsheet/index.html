@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Markdown Cheatsheet - My Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Markdown Cheatsheet</a>
+                            </li>
+                            <li >
+                                <a href="../about/">Alma densis nostra quisquam missis</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CDMO <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../CDMO/CDMO統整/">CDMO</a>
+</li>
+                                    
+<li >
+    <a href="../CDMO/樂迦再生科技/">樂迦再生科技</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">特管辦法 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../特管辦法/細胞治療技術資訊揭露平台/">【特管辦法】如何使用「細胞治療技術資訊揭露平台」</a>
+</li>
+                                    
+<li >
+    <a href="../特管辦法/細胞治療的關鍵角色/">【特管辦法】細胞治療的關鍵角色</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">職能框架 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../職能框架/職能框架101/">職能框架101</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../about/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#markdown-cheatsheet">Markdown Cheatsheet</a></li>
+            <li><a href="#_1">標題</a></li>
+            <li><a href="#_2">重點</a></li>
+            <li><a href="#_3">列表</a></li>
+            <li><a href="#_4">連結</a></li>
+            <li><a href="#_5">圖片</a></li>
+            <li><a href="#_6">程式碼與語法高亮</a></li>
+            <li><a href="#_7">表格</a></li>
+            <li><a href="#_8">引用文字</a></li>
+            <li><a href="#html">行內 HTML</a></li>
+            <li><a href="#_9">水平線</a></li>
+            <li><a href="#_10">斷行</a></li>
+            <li><a href="#youtube">Youtube 影片</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="markdown-cheatsheet">Markdown Cheatsheet</h1>
+<p>轉載自：<a href="https://bit.ly/mdcheat">bit.ly/mdcheat</a></p>
+<p>這篇文章旨在作為快速參考與展示。要更多完整的資訊，請見 <a href="http://daringfireball.net/projects/markdown/">John Gruber 原本的規格</a>與 <a href="http://github.github.com/github-flavored-markdown/">Github 偏好的 Markdown（Github-flavored Markdown，簡寫為GFM）資訊頁</a>。</p>
+<p>如果你正在找 Markdown Here 的小抄（Cheatsheet），<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet">這裡</a>也有一篇。你也可以看看更多 Markdown 的工具。</p>
+<p>譯註：可以參考這份<a href="http://markdown.tw/">中文版文件</a>，有更詳盡的 Markdown 語法說明；如果需要可以練習的線上編輯器，可以試試看<a href="https://hackmd.io/">HackMD</a>。</p>
+<h2 id="_1">標題</h2>
+<pre><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+你也可以使用下劃線的方式標記 H1 與 H2：
+
+Alt-H1
+======
+
+Alt-H2
+------
+</code></pre>
+
+<h2 id="_2">重點</h2>
+<pre><code>重點，又被稱為斜體，在兩邊加上 *星號* 或是 _下劃線_ 。
+
+更強的重點，又稱為粗體，在兩邊加上 **兩個星號** 或是 __兩個下劃線__ 。
+
+也可以用 **星號與 _下劃線_** 結合重點。
+
+刪除線使用兩個波浪符號。 ~~刪除這個。~~
+</code></pre>
+
+<p>重點，又被稱為斜體，在兩邊加上 <em>星號</em> 或是 <em>下劃線</em> 。</p>
+<p>更強的重點，又稱為粗體，在兩邊加上 <strong>兩個星號</strong> 或是 <strong>兩個下劃線</strong> 。</p>
+<p>也可以用 <strong>星號與 <em>下劃線</em></strong> 結合重點。</p>
+<p>刪除線使用兩個波浪符號。 ~~刪除這個。~~</p>
+<h2 id="_3">列表</h2>
+<p>（在這個例子裡，前置與後面的空白以點的方式顯示：⋅）
+(In this example, leading and trailing spaces are shown with with dots: ⋅)</p>
+<pre><code>1. 第一個有序列表項目
+2. 另一個項目
+⋅⋅⋅* 無序子列表 
+1. 實際數字不重要，只要它是一個數字
+⋅⋅⋅1. 有序子列表
+4. 與其他項目
+
+⋅⋅⋅要在列表項目下加入段落，只要縮進就好了。注意前面的空白行，以及前置的空白（至少要一個空白，不過我們在這裡會使用三個空白以剛好對齊原始的文字）。
+
+⋅⋅⋅要使文字段行而不會成為新的段落，你只需要在後面加上兩個空白。⋅⋅
+⋅⋅⋅注意這行已經分開了，不過還是在同樣的段落中。
+⋅⋅⋅（如果不要求後面的兩個空格，就為伴了典型的 GFM 斷行格式。）
+
+* 無序列表可以使用星號
+- 或減號
++ 或加號
+</code></pre>
+
+<ol>
+<li>第一個有序列表項目</li>
+<li>另一個項目</li>
+<li>無序子列表 </li>
+<li>實際數字不重要，只要它是一個數字</li>
+<li>有序子列表</li>
+<li>與其他項目</li>
+</ol>
+<p>要在列表項目下加入段落，只要縮進就好了。注意前面的空白行，以及前置的空白（至少要一個空白，不過我們在這裡會使用三個空白以剛好對齊原始的文字）。</p>
+<p>要使文字段行而不會成為新的段落，你只需要在後面加上兩個空白。<br />
+   注意這行已經分開了，不過還是在同樣的段落中。
+   （如果不要求後面的兩個空格，就為伴了典型的 GFM 斷行格式。）</p>
+<ul>
+<li>無序列表可以使用星號</li>
+<li>或減號</li>
+<li>或加號</li>
+</ul>
+<h2 id="_4">連結</h2>
+<p>有兩個方法可以建立連結</p>
+<pre><code>[這是一個行內樣式的連結](https://www.google.com)
+
+[這是一個加上標題的行內樣式連結](https://www.google.com &quot;Google 的首頁&quot;)
+
+[這是一個引用樣式的連結][任意不區分大小寫的文字]
+
+[以相對的文件路徑引用其他文件](../blob/master/LICENSE)
+
+[可以用數字來宣告一個引用樣式的連結][1]
+
+或讓他空白並使用[連結文字本身]。
+
+網址，或是尖括號中的網址會自動轉換成連結。
+http://www.example.com 或 &lt;http://www.example.com&gt; 甚至有時候 example.com 也可以（只是舉例，Github上無效）。
+
+引用連結可以在一些文字後面。
+
+[任意不區分大小寫的文字]: https://www.mozilla.org
+[1]: http://slashdot.org
+[連結文字本身]: http://www.reddit.com
+</code></pre>
+
+<p><a href="https://www.google.com">這是一個行內樣式的連結</a></p>
+<p><a href="https://www.google.com" title="Google 的首頁">這是一個加上標題的行內樣式連結</a></p>
+<p><a href="https://www.mozilla.org">這是一個引用樣式的連結</a></p>
+<p><a href="../blob/master/LICENSE">以相對的文件路徑引用其他文件</a></p>
+<p><a href="http://slashdot.org">可以用數字來宣告一個引用樣式的連結</a></p>
+<p>或讓他空白並使用<a href="http://www.reddit.com">連結文字本身</a>。</p>
+<p>網址，或是尖括號中的網址會自動轉換成連結。
+http://www.example.com 或 <a href="http://www.example.com">http://www.example.com</a> 甚至有時候 example.com 也可以（只是舉例，Github上無效）。</p>
+<p>引用連結可以在一些文字後面。</p>
+<h2 id="_5">圖片</h2>
+<pre><code>這是我們的 Logo（把游標指向 Logo 可以看到標題文字）
+
+行內樣式：
+![alt 文字](https://raw.githubusercontent.com/adam-p/markdown-here/master/src/common/images/icon48.png &quot;Logo 標題文字 1&quot;)
+
+引用樣式: 
+![alt 文字][logo]
+
+[logo]: https://raw.githubusercontent.com/adam-p/markdown-here/master/src/common/images/icon48.png &quot;Logo 標題文字 2&quot;
+</code></pre>
+
+<p>這是我們的 Logo（把游標指向 Logo 可以看到標題文字）</p>
+<p>行內樣式：
+<img alt="alt 文字" src="https://raw.githubusercontent.com/adam-p/markdown-here/master/src/common/images/icon48.png" title="Logo 標題文字 1" /></p>
+<p>引用樣式: 
+<img alt="alt 文字" src="https://raw.githubusercontent.com/adam-p/markdown-here/master/src/common/images/icon48.png" title="Logo 標題文字 2" /></p>
+<h2 id="_6">程式碼與語法高亮</h2>
+<p>程式碼區塊是 Markdown 規格的一部分，不過語法高亮不是。無論如何，許多渲染器──如 Github 和 <em>Markdown Here</em> ──支援語法高亮。每個渲染器支援的程式語言，以及程式語言的名字寫法都不一樣。<em>Markdown Here</em> 支援幾十種語言（以及不一定是真的程式語言，像 diffs 與 HTTP headers）的語法高亮；要看完整的列表，以及語言的名稱，請見 <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">highlight.js 的示範頁</a>。</p>
+<pre><code>行內的 `程式碼` 用 `反引號` 包圍起來。
+Inline `code` has `back-ticks around` it.
+</code></pre>
+
+<p>行內的 <code>程式碼</code> 用 <code>反引號</code> 包圍起來。</p>
+<p>程式碼區塊可以用只有三個反引號<code>```</code>的一行圍起來，或是以四個空格縮排。我建議用三個反引號的方式圍起來 ── 這比較簡單，而且只有這個方式支援語法高亮。</p>
+<pre lang=""><code>```javascript
+var s = "JavaScript 語法高亮";
+alert(s);
+
+<pre><code>
+```python
+s = &quot;Python 語法高亮&quot;
+print s
+</code></pre>
+
+
+
+<pre><code>沒有指定程式語言，所以沒有語法高亮。
+不過，我們可以放進一個 &lt;b&gt;標籤&lt;/b&gt;。
+</code></pre>
+
+</code></pre>
+
+<pre><code class="javascript">var s = &quot;JavaScript 語法高亮&quot;;
+alert(s);
+</code></pre>
+
+<pre><code class="python">s = &quot;Python 語法高亮&quot;
+print s
+</code></pre>
+
+<pre><code>沒有指定程式語言，所以 Markdown Here 沒有語法高亮（在Github 上可能不一樣）。
+不過，我們可以放進一個 &lt;b&gt;標籤&lt;/b&gt;。
+</code></pre>
+
+<h2 id="_7">表格</h2>
+<p>Markdown 的核心標準沒有表格，不過表格是 GFM 的一部分，而且 <em>Markdown Here</em> 支援表格。這是在電子郵件中加入表格的好方法 － 本來是需要從其他應用程式複製貼上的工作。</p>
+<pre><code>冒號可以用來標示欄位的對齊方式。
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| 第三欄        | 靠右對齊      | $1600 |
+| 第二欄        | 置中對齊      |   $12 |
+| 斑馬條紋      | 是整齊的      |    $1 |
+
+每個標頭元件都要用至少三個破折號分隔開來。
+最外面的豎線可以省略，你也不需要讓原始的文字排列整齊。你也可以使用行內樣式的 Markdown。
+
+不 | 漂亮 | 的文字
+--- | --- | ---
+*依然* | `渲染的` | **很好**
+1 | 2 | 3
+</code></pre>
+
+<p>冒號可以用來標示欄位的對齊方式。</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第三欄</td>
+<td align="center">靠右對齊</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>第二欄</td>
+<td align="center">置中對齊</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>斑馬條紋</td>
+<td align="center">是整齊的</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>每個標頭元件都要用至少三個破折號分隔開來。
+最外面的豎線可以省略，你也不需要讓原始的文字排列整齊。你也可以使用行內樣式的 Markdown。</p>
+<table>
+<thead>
+<tr>
+<th>不</th>
+<th>漂亮</th>
+<th>的文字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>依然</em></td>
+<td><code>渲染的</code></td>
+<td><strong>很好</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">引用文字</h2>
+<pre><code>&gt; 在電子郵件中，引用文字可以很方便的模擬回應的文字。
+&gt; 這行也在同樣的引用區塊。
+
+引用區塊結束
+
+&gt; 就算這行很長，只要包裹的好，依然可以很好的被引用。哦，我們繼續寫以保證每個人都確實的被包在裡面。喔，你也可以在引用文字中 *放入* 其他 **Markdown** 語法。
+</code></pre>
+
+<blockquote>
+<p>在電子郵件中，引用文字可以很方便的模擬回應的文字。
+這行也在同樣的引用區塊。</p>
+</blockquote>
+<p>引用區塊結束</p>
+<blockquote>
+<p>就算這行很長，只要包裹的好，依然可以很好的被引用。哦，我們繼續寫以保證每個人都確實的被包在裡面。喔，你也可以在引用文字中 <em>放入</em> 其他 <strong>Markdown</strong> 語法。</p>
+</blockquote>
+<h2 id="html">行內 HTML</h2>
+<p>你也可以在 Markdown 裡面撰寫原始的 HTML，這些 HTML 一樣大多數運作的很好。</p>
+<pre><code>&lt;dl&gt;
+  &lt;dt&gt;定義列表&lt;/dt&gt;
+  &lt;dd&gt;有時候，人們偶爾會用到。&lt;/dd&gt;
+
+  &lt;dt&gt;在 HTML 中撰寫 Markdown&lt;/dt&gt;
+  &lt;dd&gt;*無法* 運作的 **非常** 好。改用 HTML&lt;em&gt;標籤&lt;/em&gt;。&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+<dl>
+  <dt>定義列表</dt>
+  <dd>有時候，人們偶爾會用到。</dd>
+
+  <dt>在 HTML 中撰寫 Markdown</dt>
+  <dd>*無法* 運作的 **非常** 好。改用 HTML<em>標籤</em>。</dd>
+</dl>
+
+<h2 id="_9">水平線</h2>
+<pre><code>三個或更多個……
+
+---
+
+連字符
+
+***
+
+星號
+
+___
+
+下劃線
+</code></pre>
+
+<p>三個或更多個……</p>
+<hr />
+<p>連字符</p>
+<hr />
+<p>星號</p>
+<hr />
+<p>下劃線</p>
+<h2 id="_10">斷行</h2>
+<p>如果你想要學習斷行如何運作，我基本上建議最好就是實驗看看 ── 按<Enter>一下（也就是，插入一個換行符號），接著再按一次 (也就是，插入兩個換行符號)，看看會發生什麼。你很快就會得到你想要的。「Markdown Toggle」是你的好朋友。</p>
+<p>你可以試試看這裡的一些方式：</p>
+<pre><code>我們從這一行開始。
+
+兩個換行符號分開了這行和前面那一行，所以這會變成 **分開的段落** 。
+
+這行也是個分開的段落，不過……
+只有一個換行符號分開這行，所以這是 *同段落* 中的分開兩行。
+</code></pre>
+
+<p>我們從這一行開始。</p>
+<p>兩個換行符號分開了這行和前面那一行，所以這會變成 <strong>分開的段落</strong> 。</p>
+<p>這行也是個分開的段落，不過……
+只有一個換行符號分開這行，所以這是 <em>同段落</em> 中的分開兩行。</p>
+<p>（技術提示: <em>Markdown Here</em> 使用 GFM 的換行，所以不用使用 Markdown 原先的兩個空格換行法。）</p>
+<h2 id="youtube">Youtube 影片</h2>
+<p>Youtube 影片無法直接被加入，不過我們可以加入圖片，在圖片上設定連結到影片，像這樣：</p>
+<pre><code>&lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE影片ID放在這裡
+&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/YOUTUBE影片ID放在這裡/0.jpg&quot; 
+alt=&quot;圖片 ALT 文字放在這裡&quot; width=&quot;240&quot; height=&quot;180&quot; border=&quot;10&quot; /&gt;&lt;/a&gt;
+</code></pre>
+
+<p>或是，用單純的 Markdown，不過會無法改變圖片的大小與邊框：</p>
+<pre><code>[![圖片 ALT 文字放在這裡](http://img.youtube.com/vi/YOUTUBE影片ID放在這裡/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE影片ID放在這裡)
+</code></pre>
+
+<p>可以在 <code>git commit</code> 裡面用 #bugID 的方式引用一個 bug，比如說 #1。</p>
+<hr />
+<p>License: <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a></p>
+<p>翻譯自 <a href="https://github.com/adam-p/">adam-p</a> 的 <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">wiki</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
