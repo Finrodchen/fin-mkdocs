@@ -2,6 +2,8 @@
 
 ## What is Marp?
 
+![logo](https://i.imgur.com/okZsFwr.png)
+
 Marp是利用Markdown語法編寫簡報的功能，可以簡單的作出俐落的簡報(但沒有什麼花俏的轉場，動畫之類的)，不過可以僅用編輯器就生出來，同時可以使用Markdown語法給予簡報內容整齊又美觀的排版。
 
 Mapr本身是一個開源專案，目前最方便的用法是安裝VSCode的[擴充功能](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)，便能以雙欄式操作即時呈現簡報結果。
