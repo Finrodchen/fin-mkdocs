@@ -1,63 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://fin-mkdocs.pages.dev/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Markdown_Cheatsheet/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/CDMO/CDMO%E7%B5%B1%E6%95%B4/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/CDMO/CDMO%E7%B5%B1%E6%95%B4/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/CDMO/%E6%A8%82%E8%BF%A6%E5%86%8D%E7%94%9F%E7%A7%91%E6%8A%80/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/CDMO/%E6%A8%82%E8%BF%A6%E5%86%8D%E7%94%9F%E7%A7%91%E6%8A%80/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/cancer_immune_therapy/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/DOMA/info_platform/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/cancer_therapy/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/DOMA/main_character/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/doma_recent/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Exosome/ExoPureTM_Immunobeads/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/info_platform/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Exosome/ExoPureTM_Isolation_Kit/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/main_character/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Exosome/ExoPureTM_Reagent/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/DOMA/regular_20210209/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Exosome/ExoPureTM_SEC_Columns/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/Exosome/ExoPureTM_Immunobeads/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/Exosome/Exosome_101/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/Exosome/ExoPureTM_Isolation_Kit/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://fin-mkdocs.pages.dev/%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6/%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6101/</loc>
-         <lastmod>2021-10-07</lastmod>
+         <loc>https://fin-mk..pages.dev/Exosome/ExoPureTM_Reagent/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Exosome/ExoPureTM_SEC_Columns/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Exosome/Exosome_101/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Medical/covid-19_breast_feeding/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/pf1_app/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/pf2_html/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/pf3_app_full/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/pf4_html_full/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/py1_stock_scrapper/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/py2_stock_plot/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/py3_backtesting/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/Python/py4_backtesting_optimal/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/markdown/Markdown_Cheatsheet/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/markdown/hackmd_keynote/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/markdown/marp_keynote/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/misc/ETF_00878/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/misc/RJ45_DIY/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/misc/neevo_lesson/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/misc/solar_eclipse_2020/</loc>
+         <lastmod>2021-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fin-mk..pages.dev/%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6/%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6101/</loc>
+         <lastmod>2021-10-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

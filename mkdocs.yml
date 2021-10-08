@@ -1,6 +1,6 @@
 site_name: Fins Note
 
-site_url: https://fin-mkdocs.pages.dev/
+site_url: https://fin-mk..pages.dev/
 
 nav:
     - 首頁: index.md
@@ -8,18 +8,29 @@ nav:
         - 'Exosome':
             - 'Exosome 101': './Exosome/Exosome_101.md'
     - '特管辦法':
+        - '淺談癌症治療': './DOMA/cancer_therapy.md'
+        - '癌症免疫治療': './DOMA/cancer_immune_therapy.md' 
         - '特管辦法簡介': './DOMA/main_character.md'
         - '資訊揭露平台': './DOMA/info_platform.md'
+        - '特管辦法近況': './DOMA/doma_recent.md'
+        - '特管辦法法規': './DOMA/regular_20210209.md'
     - '職能框架':
         - '職能框架簡介': './職能框架/職能框架101.md'
     - '業界動態':
         - 'CDMO':
             - 'CDMO統整': './CDMO/CDMO統整.md'
             - '樂迦再生科技': './CDMO/樂迦再生科技.md'
-    - Markdown: Markdown_Cheatsheet.md
-
-repo_url: https://github.com/Finrodchen/fin-mkdocs
-
-repo_name: GitHub
+    - '生醫新聞': 
+        - 'COVID-19':
+            - '哺乳垂直傳染': './Medical/covid-19_breast_feeding.md'
+    - 'Markdown':
+        - 'Markdown語法': './markdown/Markdown_Cheatsheet.md'
+        - 'HackMD簡報': './markdown/hackmd_keynote.md'
+        - 'Marp簡報': './markdown/marp_keynote.md'
+    - '雜學':
+        - 'Neevo網路賺錢': './misc/neevo_lesson.md'
+        - '國泰ESG-ETF(00878)': './misc/ETF_00878.md'
+        - 'RJ45網路線DIY': './misc/RJ45_DIY.md'
+        - '2020日環蝕': './misc/solar_eclipse_2020.md'
 
 dev_addr: 127.0.0.1:8100

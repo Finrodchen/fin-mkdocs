@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://fin-mk..pages.dev/Python/pf4_html_full/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>使用Flask框架製作網頁(4)─公告欄網頁完全體 - Fins Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Fins Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">首頁</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">新興技術 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Exosome</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Exosome/Exosome_101/" class="dropdown-item">Exosome 101</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">特管辦法 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DOMA/cancer_therapy/" class="dropdown-item">淺談癌症治療</a>
+</li>
+                                    
+<li>
+    <a href="../../DOMA/cancer_immune_therapy/" class="dropdown-item">癌症免疫治療</a>
+</li>
+                                    
+<li>
+    <a href="../../DOMA/main_character/" class="dropdown-item">特管辦法簡介</a>
+</li>
+                                    
+<li>
+    <a href="../../DOMA/info_platform/" class="dropdown-item">資訊揭露平台</a>
+</li>
+                                    
+<li>
+    <a href="../../DOMA/doma_recent/" class="dropdown-item">特管辦法近況</a>
+</li>
+                                    
+<li>
+    <a href="../../DOMA/regular_20210209/" class="dropdown-item">特管辦法法規</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">職能框架 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6/%E8%81%B7%E8%83%BD%E6%A1%86%E6%9E%B6101/" class="dropdown-item">職能框架簡介</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">業界動態 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CDMO</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../CDMO/CDMO%E7%B5%B1%E6%95%B4/" class="dropdown-item">CDMO統整</a>
+</li>
+            
+<li>
+    <a href="../../CDMO/%E6%A8%82%E8%BF%A6%E5%86%8D%E7%94%9F%E7%A7%91%E6%8A%80/" class="dropdown-item">樂迦再生科技</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">生醫新聞 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">COVID-19</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Medical/covid-19_breast_feeding/" class="dropdown-item">哺乳垂直傳染</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Markdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../markdown/Markdown_Cheatsheet/" class="dropdown-item">Markdown語法</a>
+</li>
+                                    
+<li>
+    <a href="../../markdown/hackmd_keynote/" class="dropdown-item">HackMD簡報</a>
+</li>
+                                    
+<li>
+    <a href="../../markdown/marp_keynote/" class="dropdown-item">Marp簡報</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">雜學 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../misc/neevo_lesson/" class="dropdown-item">Neevo網路賺錢</a>
+</li>
+                                    
+<li>
+    <a href="../../misc/ETF_00878/" class="dropdown-item">國泰ESG-ETF(00878)</a>
+</li>
+                                    
+<li>
+    <a href="../../misc/RJ45_DIY/" class="dropdown-item">RJ45網路線DIY</a>
+</li>
+                                    
+<li>
+    <a href="../../misc/solar_eclipse_2020/" class="dropdown-item">2020日環蝕</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#flask4" class="nav-link">使用Flask框架製作網頁(4)─公告欄網頁完全體</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">前情提要</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#indexhtml" class="nav-link">index.html</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#updatehtml" class="nav-link">update.html</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">本機測試</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">完整程式碼</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="flask4">使用Flask框架製作網頁(4)─公告欄網頁完全體</h1>
+<h2 id="_1">前情提要</h2>
+<p>上一篇文章我們把公告欄網頁背後的資料庫和程式都完成了，在程式中建立了寫入、刪除和更新資料庫中資料的功能。在這篇文章中，我們要修改之前完成的<code>index.html</code>和<code>update.html</code>網頁，並實際測試網頁建立公告的功能。</p>
+<h2 id="indexhtml">index.html</h2>
+<p>我們先回顧一下首頁原本的長相：</p>
+<pre><code class="language-html">{% extends 'base.html' %}  &lt;!-- 指定參照的基底網頁 --&gt;
+
+{% block head %}  &lt;!-- head區塊開始 --&gt;
+
+    &lt;title&gt;簡易公佈欄 by Finrodchen&lt;/title&gt;
+
+{% endblock %}  &lt;!-- head區塊結束 --&gt;
+
+{% block body %}  &lt;!-- body區塊開始 --&gt;
+
+    &lt;h1 style=&quot;text-align: center;&quot;&gt;
+        重要事項公告欄  &lt;!-- h1標題 --&gt;
+    &lt;/h1&gt;
+
+    &lt;table border='1' align='center'&gt;
+        &lt;tr&gt;  &lt;!-- 表格表頭 --&gt;
+            &lt;th&gt;公告事項&lt;/th&gt;
+            &lt;th&gt;說明&lt;/th&gt;
+            &lt;th&gt;公告人&lt;/th&gt;
+            &lt;th&gt;建立時間&lt;/th&gt;
+            &lt;th&gt;操作&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;  
+            &lt;!-- 
+            這裡我先填入內容，下一篇文章導入資料庫
+            的時候會改為讀取資料庫中的內容。
+            --&gt;
+            &lt;td&gt;公告001&lt;/td&gt;
+            &lt;td&gt;這是公告001的說明&lt;/td&gt;
+            &lt;td&gt;小明&lt;/td&gt;
+            &lt;td&gt;2020/06/08&lt;/td&gt;
+            &lt;td&gt;
+                刪除
+                &lt;br&gt;
+                更新
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;br&gt;
+    &lt;hr&gt;
+    &lt;br&gt;
+
+    &lt;form align='center'&gt;
+        &lt;!--
+        分別建立3個要輸入的項目
+        在input標籤中定義輸入屬性為文字
+        給予欄位名稱及ID標記(用於對應資料庫內容)
+        最後在placeholder屬性中提示使用者應填寫的資訊
+        --&gt;
+        &lt;label for=&quot;title&quot;&gt;公告事項&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; placeholder=&quot;請輸入公告事項&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;content&quot;&gt;公告說明&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot; placeholder=&quot;請輸入公告說明&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;people&quot;&gt;公告人&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;people&quot; id=&quot;people&quot; placeholder=&quot;請輸入公告發佈人&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type=&quot;submit&quot; value=&quot;新增公告事項&quot;&gt;
+
+        &lt;!-- 因為目前尚未連結資料庫，所以這個表單還無法收集資料 --&gt;
+
+    &lt;/form&gt;
+
+{% endblock %}  &lt;!-- body區塊結束 --&gt;
+</code></pre>
+<p>在首頁的程式碼中，我們要修改的部分是實際公告顯示的位置，以及增加更新及刪除的按鈕。</p>
+<h3 id="_2">公告區塊</h3>
+<p>我們先單獨把表格部分擷取出來：</p>
+<pre><code class="language-html">&lt;table border='1' align='center'&gt;
+        &lt;tr&gt;  &lt;!-- 表格表頭 --&gt;
+            &lt;th&gt;公告事項&lt;/th&gt;
+            &lt;th&gt;說明&lt;/th&gt;
+            &lt;th&gt;公告人&lt;/th&gt;
+            &lt;th&gt;建立時間&lt;/th&gt;
+            &lt;th&gt;操作&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;  
+            &lt;!-- 
+            這裡我先填入內容，下一篇文章導入資料庫
+            的時候會改為讀取資料庫中的內容。
+            --&gt;
+            &lt;td&gt;公告001&lt;/td&gt;
+            &lt;td&gt;這是公告001的說明&lt;/td&gt;
+            &lt;td&gt;小明&lt;/td&gt;
+            &lt;td&gt;2020/06/08&lt;/td&gt;
+            &lt;td&gt;
+                刪除
+                &lt;br&gt;
+                更新
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+</code></pre>
+<p>為了讓flask認出會與資料庫互動的區域，我們要把這一段表格用<code>{%  %}</code>標籤包起來，並寫入一個for迴圈，讓表格會隨著不斷寫入新的公告而自動新增。</p>
+<pre><code class="language-html">        {% for task in tasks %} &lt;!-- task for迴圈 --&gt;
+        &lt;tr&gt;  
+            &lt;td&gt;公告001&lt;/td&gt;
+            &lt;td&gt;這是公告001的說明&lt;/td&gt;
+            &lt;td&gt;小明&lt;/td&gt;
+            &lt;td&gt;2020/06/08&lt;/td&gt;
+            &lt;td&gt;
+                刪除
+                &lt;br&gt;
+                更新
+            &lt;/td&gt;
+        &lt;/tr&gt;
+         {% endfor %} &lt;!-- 迴圈結束 --&gt;
+</code></pre>
+<p>接著把在表格讀取資料庫中的公告資料，並在「刪除/更新」文字上新增超連結連到對應的功能：</p>
+<pre><code class="language-html">{% for task in tasks %} &lt;!-- task for迴圈 --&gt;
+        &lt;tr&gt;  
+            &lt;td&gt;{{ task.title }}&lt;/td&gt;
+            &lt;td&gt;{{ task.content }}&lt;/td&gt;
+            &lt;td&gt;{{ task.people }}&lt;/td&gt;
+            &lt;td&gt;{{ task.date_created.date() }}&lt;/td&gt;
+            &lt;!-- 從資料庫讀取對應欄位的資料 --&gt;
+            &lt;td&gt;
+                &lt;a href=&quot;/delete/{{ task.id }}&quot;&gt;刪除&lt;/a&gt;
+                &lt;br&gt;
+                &lt;a href=&quot;/update/{{ task.id }}&quot;&gt;更新&lt;/a&gt;
+                &lt;!-- 超連結刪除與更新的功能 --&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+         {% endfor %} &lt;!-- 迴圈結束 --&gt;
+</code></pre>
+<p>另外在供使用的輸入的資料表單中，要加入<code>action</code>和<code>method</code>兩個屬性，告知flask框架要從這個表單中收集資料：</p>
+<pre><code class="language-html">    &lt;form action=&quot;/&quot; method=&quot;POST&quot;&gt;
+    &lt;!-- 表單用於首頁，此表單會發布資料到資料庫中 --&gt;
+</code></pre>
+<p>以上就完成了首頁的修改。</p>
+<h2 id="updatehtml">update.html</h2>
+<p>一樣我們先回顧update.html的長相：</p>
+<pre><code class="language-html">{% extends 'base.html' %}  &lt;!-- 指定參照的基底網頁 --&gt;
+
+{% block head %}  &lt;!-- head區塊開始 --&gt;
+
+        &lt;title&gt;公告更新&lt;/title&gt;  &lt;!-- 網頁標題 --&gt;
+
+{% endblock %}  &lt;!-- head區塊結束 --&gt;
+
+{% block body %}  &lt;!-- body區塊開始 --&gt;
+
+    &lt;h2 style=&quot;text-align: center;&quot;&gt;
+        公告更新  &lt;!-- h2標題`,設定為置中--&gt;
+    &lt;/h2&gt;
+
+    &lt;form align='center'&gt;
+        &lt;!--
+        分別建立3個要輸入的項目
+        在input標籤中定義輸入屬性為文字
+        給予欄位名稱及ID標記(用於對應資料庫內容)
+        新增了value屬性，用於顯示預設的內容在表單輸入欄位中
+        與資料庫連結後value屬性會直接引用特定公告的資料內容
+        --&gt;
+        &lt;label for=&quot;title&quot;&gt;公告事項&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; value=&quot;公告001&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;content&quot;&gt;公告說明&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot; value=&quot;這是公告001的說明&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;people&quot;&gt;公告人&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;people&quot; id=&quot;people&quot; value=&quot;小明&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type=&quot;submit&quot; value=&quot;更新公告&quot;&gt;
+        &lt;!-- 因為目前尚未連結資料庫，所以這個表單還無法收集資料 --&gt;
+
+    &lt;/form&gt;
+
+{% endblock %}  &lt;!-- body區塊結束 --&gt;
+</code></pre>
+<p>其中我們要修改的是資料表單對應的網頁動作，以及每一個欄位中<code>value</code>屬性的內容，修正如下：</p>
+<pre><code class="language-html">&lt;form action=&quot;/update/{{ task.id }}&quot; method=&quot;POST&quot; align=&quot;center&quot;&gt;
+&lt;!-- 更新指定ID的公告，並會發布資料到資料庫中 --&gt;
+
+&lt;label for=&quot;title&quot;&gt;公告事項&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; value=&quot;{{ task.title }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;content&quot;&gt;公告說明&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot; value=&quot;{{ task.content }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;people&quot;&gt;公告人&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;people&quot; id=&quot;people&quot; value=&quot;{{ task.people }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;!-- value中會預先讀取目前的公告資訊，方便更新 --&gt;
+</code></pre>
+<p>這樣就改好更新用頁面了。</p>
+<h2 id="_3">本機測試</h2>
+<p>進入python console啟動<code>app.py</code>，點選 <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a> 連結，就在瀏覽器操作這個公告欄啦！可以測試一下新增/更新/刪除的功能是否正常，都沒問題就大功告成95%啦，再來就是要將這個公告欄部署到網路上，就完成一個真正可用的網頁公告欄了。</p>
+<p><img alt="test" src="https://i.imgur.com/BQXihb4.jpg" /></p>
+<h2 id="_4">完整程式碼</h2>
+<h3 id="indexhtml_1">index.html</h3>
+<pre><code class="language-html">{% extends 'base.html' %}  &lt;!-- 指定參照的基底網頁 --&gt;
+
+{% block head %}  &lt;!-- head區塊開始 --&gt;
+
+    &lt;title&gt;簡易公佈欄 by Finrodchen&lt;/title&gt;
+
+{% endblock %}  &lt;!-- head區塊結束 --&gt;
+
+{% block body %}  &lt;!-- body區塊開始 --&gt;
+
+    &lt;h1 style=&quot;text-align: center;&quot;&gt;
+        重要事項公告欄  &lt;!-- h1標題 --&gt;
+    &lt;/h1&gt;
+
+    &lt;table border='1' align='center'&gt;
+        &lt;tr&gt;  &lt;!-- 表格表頭 --&gt;
+            &lt;th&gt;公告事項&lt;/th&gt;
+            &lt;th&gt;說明&lt;/th&gt;
+            &lt;th&gt;公告人&lt;/th&gt;
+            &lt;th&gt;建立時間&lt;/th&gt;
+            &lt;th&gt;操作&lt;/th&gt;
+        &lt;/tr&gt;
+        {% for task in tasks %} &lt;!-- task for迴圈 --&gt;
+        &lt;tr&gt;  
+            &lt;td&gt;{{ task.title }}&lt;/td&gt;
+            &lt;td&gt;{{ task.content }}&lt;/td&gt;
+            &lt;td&gt;{{ task.people }}&lt;/td&gt;
+            &lt;td&gt;{{ task.date_created.date() }}&lt;/td&gt;
+            &lt;!-- 從資料庫讀取對應欄位的資料 --&gt;
+            &lt;td&gt;
+                &lt;a href=&quot;/delete/{{ task.id }}&quot;&gt;刪除&lt;/a&gt;
+                &lt;br&gt;
+                &lt;a href=&quot;/update/{{ task.id }}&quot;&gt;更新&lt;/a&gt;
+                &lt;!-- 超連結刪除與更新的功能 --&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+         {% endfor %} &lt;!-- 迴圈結束 --&gt;
+    &lt;/table&gt;
+
+    &lt;br&gt;
+    &lt;hr&gt;
+    &lt;br&gt;
+
+    &lt;form action=&quot;/&quot; method=&quot;POST&quot;&gt;
+    &lt;!-- 表單用於首頁，此表單會發布資料到資料庫中 --&gt;
+
+        &lt;!--
+        分別建立3個要輸入的項目
+        在input標籤中定義輸入屬性為文字
+        給予欄位名稱及ID標記(用於對應資料庫內容)
+        最後在placeholder屬性中提示使用者應填寫的資訊
+        --&gt;
+
+        &lt;label for=&quot;title&quot;&gt;公告事項&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; placeholder=&quot;請輸入公告事項&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;content&quot;&gt;公告說明&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot; placeholder=&quot;請輸入公告說明&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;people&quot;&gt;公告人&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;people&quot; id=&quot;people&quot; placeholder=&quot;請輸入公告發佈人&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type=&quot;submit&quot; value=&quot;新增公告事項&quot;&gt;
+
+    &lt;/form&gt;
+
+{% endblock %}  &lt;!-- body區塊結束 --&gt;
+</code></pre>
+<h3 id="updatehtml_1">update.html</h3>
+<pre><code class="language-html">{% extends 'base.html' %}  &lt;!-- 指定參照的基底網頁 --&gt;
+
+{% block head %}  &lt;!-- head區塊開始 --&gt;
+
+        &lt;title&gt;公告更新&lt;/title&gt;  &lt;!-- 網頁標題 --&gt;
+
+{% endblock %}  &lt;!-- head區塊結束 --&gt;
+
+{% block body %}  &lt;!-- body區塊開始 --&gt;
+
+    &lt;h2 style=&quot;text-align: center;&quot;&gt;
+        公告更新  &lt;!-- h2標題`,設定為置中--&gt;
+    &lt;/h2&gt;
+
+    &lt;form action=&quot;/update/{{ task.id }}&quot; method=&quot;POST&quot; align=&quot;center&quot;&gt;
+&lt;!-- 更新指定ID的公告，並會發布資料到資料庫中 --&gt;
+        &lt;!--
+        分別建立3個要輸入的項目
+        在input標籤中定義輸入屬性為文字
+        給予欄位名稱及ID標記(用於對應資料庫內容)
+        新增了value屬性，用於顯示預設的內容在表單輸入欄位中
+        與資料庫連結後value屬性會直接引用特定公告的資料內容
+        --&gt;
+        &lt;label for=&quot;title&quot;&gt;公告事項&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; value=&quot;{{ task.title }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;content&quot;&gt;公告說明&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;content&quot; id=&quot;content&quot; value=&quot;{{ task.content }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;people&quot;&gt;公告人&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; name=&quot;people&quot; id=&quot;people&quot; value=&quot;{{ task.people }}&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;!-- value中會預先讀取目前的公告資訊，方便更新 --&gt;
+
+    &lt;/form&gt;
+
+{% endblock %}  &lt;!-- body區塊結束 --&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
