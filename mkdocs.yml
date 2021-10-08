@@ -1,6 +1,12 @@
 site_name: Fins Note
 
-site_url: https://fin-mk..pages.dev/
+site_url: https://fin-mkdocs.pages.dev/
+
+site_description: Using Markdown to notes.
+
+site_author: Finrod Chen
+
+copyright: Copyright © 2021 Finrod Chen. All rights reserved.
 
 nav:
     - 首頁: index.md
