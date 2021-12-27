@@ -10,6 +10,7 @@ copyright: Copyright © 2021 Finrod Chen. All rights reserved.
 
 nav:
     - 首頁: index.md
+    - About: about_me.md
     - '新興技術':
         - 'Exosome':
             - 'Exosome 101': './Exosome/Exosome_101.md'
